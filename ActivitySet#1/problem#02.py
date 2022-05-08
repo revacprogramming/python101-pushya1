@@ -1,3 +1,4 @@
 # Why Program
+#just comment
 
-prinq("hello world")
+print("hello world")
