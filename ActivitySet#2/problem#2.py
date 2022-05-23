@@ -1,18 +1,20 @@
 
 def add(a, b):
-    pass  # ...
+    sum = a+b
+    return sum
 
 
 def output(a, b, sum):
-    pass  # ...
+    print(a,"+",b,'is',sum)
 
 
 def main():
-    a, b = input_two_numbers()
+    a, b = input('input_two_numbers')
+    a = int(a)
+    b = int(b)
     sum = add(a, b)
 
     output(a, b, sum)
 
 
-if __name__ == '__main__':
-    main()
+main()
