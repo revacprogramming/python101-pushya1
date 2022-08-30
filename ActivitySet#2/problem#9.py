@@ -2,10 +2,14 @@
 
 class Menu(dict):
     """fill in class definition here"""
+    def __missing__(self,key):
+        value = self[key]=type(self)
+        return value
 
 
-class Order:
+class Order(dict):
     """fill in class definition here"""
+    
 
 
 class Bill:
