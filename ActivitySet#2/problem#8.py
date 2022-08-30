@@ -1,7 +1,11 @@
 
-
-class Menu:
-    """fill in class definition here"""
+class Menu(dict):
+    
+    def __missing__(self,key):
+        value = self[key]=type(self)
+        return value
+    
+    
 
 
 m = Menu()
